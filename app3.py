@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
+API_TOKEN = st.secrets["API_TOKEN"]
 
-API_TOKEN="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"
 headers = {"Authorization": "Bearer {API_TOKEN}"}  
 API_URL = "https://api-inference.huggingface.co/models/"
 df = pd.read_excel('chapes-fluides.xlsx')
